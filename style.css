@@ -110,3 +110,28 @@ body.dark .bubble-visual { background: #342b40; }
   .project-visual { height: 190px; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
 }
+
+.hero-photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #d6d6d6;
+  margin: 0 auto 20px;
+  flex-shrink: 0;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 29%;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .hero-photo {
+    width: 210px;
+    height: 210px;
+  }
+}
